@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\Grades\GradeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +17,29 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+
+
+require __DIR__.'/auth.php';
+Route::group(
+    [
+        'prefix' => LaravelLocalization::setLocale(),
+        'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath', 'auth']
+    ], function () {
+
+     //==============================dashboard============================
+
+    Route::get('/dashboard', [Controller::class, 'index'])->name('dashboard');
+
+
+   //==============================dashboard============================
+   Route::resource('Grades', GradeController::class);
+
+
+     
+        
+   Route::resource('Grade', GradeController::class);
+  
+
 });
