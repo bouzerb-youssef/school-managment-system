@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\Grades\GradeController;
+use App\Http\Controllers\Classroom\ClassroomController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,11 +36,14 @@ Route::group(
 
    //==============================dashboard============================
    Route::resource('Grades', GradeController::class);
+   Route::resource('Classrooms', ClassroomController::class);
+   Route::post('delete_all', [ClassroomController::class, 'delete_all'])->name('delete_all');
+
+   Route::post('Filter_Classes', [ClassroomController::class, 'Filter_Classes'])->name('Filter_Classes');
 
 
      
         
-   Route::resource('Grade', GradeController::class);
-  
+   
 
 });

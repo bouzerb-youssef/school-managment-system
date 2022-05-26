@@ -17,5 +17,6 @@ return [
     'Edit'=>'Edit',
     'Delete'=>'Delete',
     'Close' => 'Close',
-
+    'exists' => 'the field is already exists',
+    
 ];

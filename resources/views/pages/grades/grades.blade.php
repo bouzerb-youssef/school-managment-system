@@ -1,9 +1,10 @@
 @extends('layouts.master')
 @section('css')
     @toastr_css
+@endsection    
 @section('title')
     {{ trans('Grades_trans.title_page') }}
-@stop
+
 @endsection
 @section('page-header')
     <!-- breadcrumb -->
