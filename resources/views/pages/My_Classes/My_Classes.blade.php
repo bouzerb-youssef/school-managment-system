@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('css')
-    @toastr_css
+
 
 
 @section('title')
@@ -348,8 +348,7 @@
 <!-- row closed -->
 @endsection
 @section('js')
-@toastr_js
-@toastr_render
+
 
 <script type="text/javascript">
     $(function() {

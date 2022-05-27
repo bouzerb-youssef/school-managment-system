@@ -9,6 +9,9 @@
     <meta name="author" content="potenzaglobalsolutions.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     @include('layouts.head')
+    <link rel="stylesheet" href="http://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css">
+
+    @toastr_css
 </head>
 
 <body>
@@ -65,6 +68,9 @@
  footer -->
 
     @include('layouts.footer-scripts')
+    @toastr_js
+    @toastr_render
+    <script src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
 
 </body>
 

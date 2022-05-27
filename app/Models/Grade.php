@@ -16,4 +16,8 @@ class Grade extends Model
     public $translatable = ['Name'];
 
     public $timestamps = true;
+    public function Sections()
+    {
+        return $this->hasMany('App\Models\Section', 'Grade_id');
+    }
 }
