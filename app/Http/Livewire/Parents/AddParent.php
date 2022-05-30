@@ -17,7 +17,7 @@ class AddParent extends Component
 
     public $successMessage = '';
 
-    public $catchError,$updateMode = false,$photos;
+    public $catchError,$updateMode = false,$photos,$show_table = true;
 
     public $currentStep = 1,
 
@@ -37,6 +37,10 @@ class AddParent extends Component
         $Address_Mother, $Religion_Mother_id;
 
         
+       
+    public function showformadd(){
+        $this->show_table = false;
+    }
 
     public function updated($propertyName)
     {
@@ -60,6 +64,7 @@ class AddParent extends Component
             'Nationalities' => Nationalitie::all(),
             'Type_Bloods' => TypeBlood::all(),
             'Religions' => Religion::all(),
+            'my_parents' => MyParent::all(),
         ]);
 
     }

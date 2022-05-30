@@ -88,6 +88,7 @@
 
 
                   <!-- Parents-->
+                
                   <li>
                     <a href="javascript:void(0);" data-toggle="collapse" data-target="#Parents-menu">
                         <div class="pull-left"><i class="fas fa-user-tie"></i><span
@@ -96,8 +97,7 @@
                         <div class="clearfix"></div>
                     </a>
                     <ul id="Parents-menu" class="collapse" data-parent="#sidebarnav">
-                        <li> <a href="#">{{trans('main_trans.List_Parents')}}</a> </li>
-                        <li> <a href="{{url('add_parent')}}">{{trans('main_trans.Add_Parent')}}</a> </li>
+                        <li> <a href="{{url('add_parent')}}">{{trans('main_trans.List_Parents')}}</a> </li>
                     </ul>
                 </li>
 
