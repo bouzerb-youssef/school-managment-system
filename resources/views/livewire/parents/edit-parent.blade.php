@@ -1,0 +1,25 @@
+'Email'                  =>$this->
+'Password'                   =>$this->
+'Name_Father'                   =>$this->
+'Name_Father_en'                   =>$this->
+'Job_Father'                   =>$this->
+'Job_Father_en'                   =>$this->
+'National_ID_Father' |                 =>$this->
+'Passport_ID_Father'                  =>$this->
+'Phone_Father'                  =>$this->
+'Nationality_Father_id'                   =>$this->
+'Blood_Type_Father_id'                   =>$this->
+'Religion_Father_id'                   =>$this->
+'Address_Father'                   =>$this->
+//
+'Name_Mother'                 =>$this->
+'Name_Mother_en'                 =>$this->
+'National_ID_Mother'                 =>$this->
+'Passport_ID_Mother'                 =>$this->
+'Phone_Mother'                 =>$this->
+'Job_Mother'                 =>$this->
+'Job_Mother_en'                 =>$this->
+'Nationality_Mother_id'                 =>$this->
+'Blood_Type_Mother_id'                 =>$this->
+'Religion_Mother_id'                 =>$this->
+'Address_Mother'                 =>$this->           

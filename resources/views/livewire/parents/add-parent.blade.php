@@ -6,11 +6,14 @@
         </div>
     @endif
 
+
+
+
+
 @if ($show_table)
 
 @include('livewire.parents.Parent_Table')
 
-    
 @else
 
     <div class="stepwizard">
